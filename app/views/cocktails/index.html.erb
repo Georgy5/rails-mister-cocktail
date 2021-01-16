@@ -2,7 +2,7 @@
 <p>Find me in app/views/cocktails/index.html.erb</p>
 
 <ul>
-  <%= @cocktails.each do |drink| %>
+  <% @cocktails.each do |drink| %>
   <li><%= link_to drink.name, cocktail_path(drink) %></li>
+  <% end %>
 </ul>
-<% end %>
