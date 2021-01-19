@@ -5,6 +5,9 @@
   <strong>Name:</strong>
   <%= @cocktail.name %>
 </p>
+<p>
+  <%= link_to 'New Dose', new_cocktail_dose_path(@cocktail) %>
+</p>
 
 <hr>
 

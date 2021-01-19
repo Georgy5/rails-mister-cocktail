@@ -3,7 +3,7 @@
       <h1>Doses#new</h1>
       <%= simple_form_for [@cocktail, @dose] do |f| %>
         <%= f.input :description, placeholder: "Quantity ingredient"  %>
-        <%= f.association :ingredient, placeholder: "Choose ingredient" %>
+        <%= f.association :ingredient, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
         <%= f.button :submit, placeholder: "Add dose", class: "btn btn-secondary"%>
       <% end %>
   </div>
