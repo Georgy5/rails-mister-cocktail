@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 2021_01_16_115257) do
   enable_extension "plpgsql"
 
   create_table "cocktails", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "doses", force: :cascade do |t|
-    t.string "description"
+    t.string "description", null: false
     t.bigint "cocktail_id", null: false
     t.bigint "ingredient_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_01_16_115257) do
   end
 
   create_table "ingredients", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
