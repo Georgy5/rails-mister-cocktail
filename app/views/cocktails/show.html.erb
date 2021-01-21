@@ -5,10 +5,14 @@
     Cocktail:
     <strong><%= @cocktail.name %></strong>
   </p>
-  
+
   <p>
     <%= link_to 'New Dose', new_cocktail_dose_path(@cocktail) %>
   </p>
+
+  <% if @cocktail.photo.attached? %>
+  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 300, crop: :fill %>
+  <% end  %>
 
   <hr>
 
