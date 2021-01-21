@@ -1,10 +1,13 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktails/index.html.erb</p>
+<div class="container">
+  <h1>Cocktails#index</h1>
 
-<ul>
-  <% @cocktails.each do |drink| %>
-  <li><%= link_to drink.name, cocktail_path(drink) %></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @cocktails.each do |drink| %>
+    <li><%= link_to drink.name, cocktail_path(drink) %></li>
+    <% end %>
+  </ul>
 
-<%= link_to 'New Cocktail', new_cocktail_path %>
+  <hr>
+
+  <%= link_to 'New Cocktail', new_cocktail_path %>
+</div>

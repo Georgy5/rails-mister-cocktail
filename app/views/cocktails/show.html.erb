@@ -1,14 +1,16 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="container">
+  <h1>Cocktails#show</h1>
+  <p>Find me in app/views/cocktails/show.html.erb</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @cocktail.name %>
-</p>
-<p>
-  <%= link_to 'New Dose', new_cocktail_dose_path(@cocktail) %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @cocktail.name %>
+  </p>
+  <p>
+    <%= link_to 'New Dose', new_cocktail_dose_path(@cocktail) %>
+  </p>
 
-<hr>
+  <hr>
 
-<%= link_to 'Back', root_path %>
+  <%= link_to 'Back', root_path %>
+</div>

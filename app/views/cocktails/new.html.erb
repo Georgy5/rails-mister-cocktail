@@ -1,0 +1,13 @@
+ lines (11 sloc) 308 Bytes
+<div class="container">
+  <h1>Create a new cocktail</h1>
+
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit, class: 'btn btn-primary' %>
+  <% end %>
+
+  <hr>
+
+  <%= link_to 'Back', cocktails_path %>
+</div>
