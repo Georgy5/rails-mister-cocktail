@@ -7,6 +7,9 @@
     <% end %>
   </ul>
 
+  <%= cl_image_tag("h8fhlk6cfvtbjvai8u76.jpg",
+      width: 225, height: 225, crop: :fill) %>
+
   <hr>
 
   <%= button_to "New Cocktail", new_cocktail_path, :method => "get" %>
